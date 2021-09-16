@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 11</title>
+</head>
+<body>
+    <p>Try to open Google.com</p>
+    <a id="a" href="https://www.google.com">google.com</a>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#a").click(function (e) {
+                e.preventDefault();
+                alert('cannot access google');
+            });
+        });
+    </script>
+</body>
+</html>
+

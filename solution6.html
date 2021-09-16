@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 6</title>
+</head>
+<body>
+    <div>This text inside the div tag.</div>
+    <button id="b1">Click Here to change div tag</button>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function() {
+                $("div").replaceWith($("<p>"+$("div").text()+"</p>"));
+            });
+        });
+    </script>
+</body>
+</html>
+

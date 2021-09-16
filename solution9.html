@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 9</title>
+</head>
+<body>
+    <p>Select domain from the list</p>
+    <select>
+        <option value="">Select Option</option>
+        <option value="Devops">Devops</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Data Engineer">Data Engineer</option>
+        <option value="QA Engineer">QA Engineer</option>
+    </select>
+    <p>Selected domain are - <p id="domain"></p>
+    </p>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').on("change", function () {
+                $("#domain").append(this.value + " <br>")
+            });
+        });
+    </script>
+</body>
+</html>
+

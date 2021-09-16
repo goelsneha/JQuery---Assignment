@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 5</title>
+</head>
+<body>
+    <div id="main">
+        <p class="target">This is a paragraph.</p>
+    </div>
+    <div id="para">
+        <p class="target">This is another paragraph.</p>
+    </div>
+    <button>Click Here</button>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function() {
+                $(".target").parent("#main").css({'font-size': '200%',"color":"green"});
+            });
+        });
+    </script>
+</body>
+</html>
+

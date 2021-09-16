@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 14</title>
+</head>
+<body>
+    <table style="width:50%" id="someTable">
+        <strong>Weekly Points Earned</strong>
+        <tr>
+            <th class="epoints">col-1</th>
+            <th class="epoints">col-2</th>
+            <th class="epoints">col-3</th>
+        </tr>
+        <tr>
+            <th class="epoints">2</th>
+            <th class="epoints">11</th>
+            <th class="epoints">15</th>
+        </tr>
+        <tr>
+            <th class="epoints">16</th>
+            <th class="epoints">5</th>
+            <th class="epoints">9</th>
+        </tr>
+        <tr>
+            <th class="epoints">0</th>
+            <th class="epoints">19</th>
+            <th class="epoints">6</th>
+        </tr>
+        <tr>
+            <th class="epoints">2</th>
+            <th class="epoints">4</th>
+            <th class="epoints">18</th>
+        </tr>
+    </table>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.epoints').each(function(i,n){
+                if($(n).text()>10)
+                $(n).css('background-color','purple');
+            });
+        });
+    </script>
+</body>
+</html>
+

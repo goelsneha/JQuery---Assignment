@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 13</title>
+</head>
+<body>
+    <div class="panel">
+        Line 1 in div 1 <br>
+        Line 2 in div 1 <br>
+    </div><br>
+    <div class="panel">
+        Line 1 in div 2 <br>
+        Line 2 in div 2 <br>
+        Line 3 in div 2 <br>
+    </div><br>
+    <div class="panel">
+        Line 1 in div 3 <br>
+        Line 2 in div 3 <br>
+    </div><br>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var highest = null;
+            var hi = 0;
+            $(".panel").each(function(){
+                var h = $(this).height();
+                if(h > hi){
+                    hi = h;
+                    highest = $(this);
+                }
+            });
+            alert('max height - ' + Math.round(hi));
+            $(highest).css("background-color","red");
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 12</title>
+</head>
+<body>
+    <div>
+        This is grandparent
+        <p>This is parent<br>
+            <span>This is child </span>
+        </p>
+    </div>
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div').click((e)=>{
+                $('span').append("Grandparent in child ");
+            })
+            $('p').click((e)=>{
+                e.stopPropagation();   
+                $('span').append("This is child again ");             
+            });
+        });
+    </script>
+</body>
+</html>
+
